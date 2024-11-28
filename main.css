@@ -23,6 +23,7 @@
 }
 
 body {
+  backdrop-filter: blur(1px);
   margin: 0;
   height: 100vh;
   display: flex;
@@ -31,6 +32,18 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.spotlight {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(
+    circle,
+    transparent 50px,
+    rgba(0, 0, 0, 0.35) 100px
+  );
 }
 
 .main-wrapper {
@@ -58,6 +71,17 @@ body {
   align-items: center;
   font-weight: 900;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.object-ontop text {
+  -webkit-user-select: none; /* Safari */
+  user-select: none; /* Standard syntax */
+}
+
+body {
+  cursor: none;
+  -webkit-user-select: none; /* Safari */
+  user-select: none; /* Standard syntax */
 }
 
 .sidebar {
@@ -100,4 +124,59 @@ body {
   padding: 0.2vw;
   border: black 3px solid;
   border-radius: 15px;
+}
+
+.rounded {
+  z-index: 2;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: none;
+}
+
+.homeback {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.homeback a {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.4s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.homeback a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.homeback a img {
+  height: 2vw;
+  width: 2vw;
+  padding: 0.2vw;
+  border: black 3px solid;
+  border-radius: 15px;
+}
+
+.intromg {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  fill: black;
+  align-items: center; 
+  background-color: transparent;
 }

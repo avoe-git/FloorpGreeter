@@ -4,59 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="planet.png" type="image/x-icon" />
+    <title>Just chill</title>
     <link rel="stylesheet" href="main.css" />
-    <title>avoe</title>
   </head>
   <body>
     <div class="spotlight"></div>
     <div class="cursor rounded"></div>
     <div class="logo">
       <img src="planet.png" alt="copyright - avoe 2024" /><span
-        >AVOE.DEV - FLOORP GREETER</span
+        >AVOE.DEV - FLOORP Loader</span
       >
     </div>
-    <div class="main-wrapper">
+    <div
+      class="main-wrapper"
+      style="text-transform: none; font-family: Outfit, sans-serif"
+    >
+      <div class="homeback">
+        <a href="/"><img src="/Icons/home.png" alt="Home" /></a>
+      </div>
       <div class="sidebar">
-        <ul>
-          <li>
-            <a href="https://github.com"
-              ><img src="/Icons/github.png" alt="GitHub"
-            /></a>
-          </li>
-          <li>
-            <a href="https://chatgpt.com"
-              ><img src="/Icons/icons8-chat-gpt-100.png" alt="ChatGPT"
-            /></a>
-          </li>
-          <li>
-            <a href="https://web.whatsapp.com"
-              ><img src="/Icons/icons8-whatsapp-100.png" alt="WhatsApp"
-            /></a>
-          </li>
-          <li>
-            <a href="https://gmail.com"
-              ><img src="/Icons/icons8-gmail-100.png" alt="Gmail"
-            /></a>
-          </li>
-          <li>
-            <a href="https://instagram.com"
-              ><img src="/Icons/icons8-instagram-100.png" alt="Instagram"
-            /></a>
-          </li>
-          <li>
-            <a href="https://music.youtube.com"
-              ><img src="/Icons/icons8-youtube-music-100.png" alt="YT Music"
-            /></a>
-          </li>
-          <li>
-            <a href="" onclick="ChangeImage()"
-              ><img src="/Icons/ChangeImage.png" alt="ChangeImage"
-            /></a>
-          </li>
-          <li>
-            <a href="loader"><img src="/Icons/loader.png" alt="Loader" /></a>
-          </li>
-        </ul>
+        <div class="clock-widget">
+          <div class="time"></div>
+          <div class="date"></div>
+        </div>
       </div>
       <div class="object-ontop">
         <svg viewbox="0 0 100 20">
@@ -73,7 +43,7 @@
                 id="wavePath"
                 d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
                 mask="url(#mask)"
-                fill="white"
+                fill="black"
               >
                 <animateTransform
                   attributeName="transform"
@@ -93,10 +63,10 @@
             x="50"
             y="13"
             font-size="10"
-            fill="cyan"
-            fill-opacity="0.2"
+            fill="white"
+            fill-opacity="0.5"
           >
-            WELCOME, avoe!
+            OFFLINE
           </text>
           <text
             class="intro"
@@ -107,7 +77,7 @@
             fill="url(#wave)"
             fill-opacity="1"
           >
-            WELCOME, avoe!
+            OFFLINE
           </text>
         </svg>
       </div>

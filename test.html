@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="planet.png" type="image/x-icon">
+    <title>Just chill</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="spotlight"></div>
+    <div class="cursor rounded"></div>
+    <div class="logo">
+      <img src="planet.png" alt="copyright - avoe 2024" /><span
+        >AVOE.DEV - FLOORP Loader</span
+      >
+    </div>
+    <div class="main-wrapper" style="text-transform: none; font-family: Outfit, sans-serif;">
+      <div class="homeback">
+        <a href="/"><img src="/Icons/home.png" alt="Home"></a>
+      </div>
+      <div class="sidebar">
+        <div class="clock-widget">
+          <div class="time"></div>
+          <div class="date"></div>
+        </div>
+      </div>
+      <div class="object-ontop">
+        <svg viewbox="0 0 100 20">
+          <defs>
+            <pattern
+              id="wave"
+              x="0"
+              y="-0.5"
+              width="100%"
+              height="100%"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                id="wavePath"
+                d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                mask="url(#mask)"
+                fill="white"
+              >
+                <animateTransform
+                  attributeName="transform"
+                  begin="0s"
+                  dur="2.5s"
+                  type="translate"
+                  from="0,0"
+                  to="40,0"
+                  repeatCount="indefinite"
+                />
+              </path>
+            </pattern>
+          </defs>
+          <img class="intromg"
+          src="/Icons/arch.svg" alt="is arch">
+        </svg>
+      </div>
+    </div>
+    <script src="extended.js"></script>
+    <script src="mouse.js"></script>
+  </body>
+</html>
