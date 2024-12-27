@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&family=Parkinsans:wght@300..800&display=swap");
 
+
 .logo {
   position: absolute;
   margin: auto;
   width: 100%;
-  top: 0;
-  margin-top: 10px;
+  bottom: 0;
+  margin-bottom: 10px;
   /* right: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+button, a {
+  cursor: none
+}
+
 .logo img {
   width: 1.2vw;
   height: 1.2vw;
@@ -21,7 +27,6 @@
   font-size: 0.5vw;
   margin-left: 5px;
 }
-
 body {
   backdrop-filter: blur(1px);
   margin: 0;
@@ -32,6 +37,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url(/Wallpapers/292.jpg);
 }
 
 .spotlight {
@@ -42,7 +48,7 @@ body {
   background-image: radial-gradient(
     circle,
     transparent 50px,
-    rgba(0, 0, 0, 0.35) 100px
+    rgba(0, 0, 0, 0.3) 100px
   );
 }
 
@@ -118,6 +124,45 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.colored img {
+  animation: colorloop 10s linear infinite;
+}
+
+@keyframes colorloop {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  10% {
+    filter: hue-rotate(36deg);
+  }
+  20% {
+    filter: hue-rotate(72deg);
+  }
+  30% {
+    filter: hue-rotate(108deg);
+  }
+  40% {
+    filter: hue-rotate(144deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  60% {
+    filter: hue-rotate(216deg);
+  }
+  70% {
+    filter: hue-rotate(252deg);
+  }
+  80% {
+    filter: hue-rotate(288deg);
+  }
+  90% {
+    filter: hue-rotate(324deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
 .sidebar ul li img {
   height: 4vw;
   width: 4vw;
@@ -133,9 +178,10 @@ body {
   left: -15px;
   width: 30px;
   height: 30px;
-  border: 2px solid #fff;
+  border: 2px solid green;
   border-radius: 50%;
   display: none;
+  animation: colorloop 5s linear infinite;
 }
 
 .homeback {
@@ -146,24 +192,27 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 2;
+  gap: 5px;
 }
 
-.homeback a {
+.homeback button {
   margin: 0;
+  padding: 0;
+  border: none;
   display: flex;
   flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: var(--main-text);
   transition: background-color 0.4s ease-in-out;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
 }
 
-.homeback a:hover {
+.homeback button:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.homeback a img {
+.homeback button img {
   height: 2vw;
   width: 2vw;
   padding: 0.2vw;
@@ -177,6 +226,67 @@ body {
   flex-direction: column;
   justify-content: center;
   fill: black;
-  align-items: center; 
+  align-items: center;
   background-color: transparent;
+}
+
+.theming-element img {
+  height: 2vw;
+  width: 2vw;
+  padding: 0.5vw;
+  border: black 3px solid;
+  border-radius: 15px;
+}
+
+.theming-element {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.theming-element button {
+  margin: 0; 
+  padding: 0;
+  border: none;
+  border-radius: 15px;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.4s ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  gap: 5px;
+}
+
+.ImageChange {
+  margin: 0; 
+  padding: 0;
+  border: none;
+  border-radius: 15px;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.4s ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageChange:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hnyc {
+  animation: colorloop 5s linear infinite;
 }

@@ -7,59 +7,86 @@
     <title>Just chill</title>
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
-    <div class="spotlight"></div>
-    <div class="cursor rounded"></div>
-    <div class="logo">
-      <img src="planet.png" alt="copyright - avoe 2024" /><span
-        >AVOE.DEV - FLOORP Loader</span
-      >
-    </div>
-    <div class="main-wrapper" style="text-transform: none; font-family: Outfit, sans-serif;">
-      <div class="homeback">
-        <a href="/"><img src="/Icons/home.png" alt="Home"></a>
-      </div>
-      <div class="sidebar">
-        <div class="clock-widget">
-          <div class="time"></div>
-          <div class="date"></div>
-        </div>
-      </div>
-      <div class="object-ontop">
-        <svg viewbox="0 0 100 20">
-          <defs>
-            <pattern
-              id="wave"
-              x="0"
-              y="-0.5"
-              width="100%"
-              height="100%"
-              patternUnits="userSpaceOnUse"
+  <body style="cursor: auto;">
+    <!-- <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <mask id="waveMask" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="20">
+          <rect x="0" y="0" width="100%" height="100%" fill="white" />
+          <pattern
+            id="wave"
+            x="0"
+            y="0"
+            width="100%"
+            height="100%"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+              mask="url(#mask)"
+              id="wavePath"
+              fill="white"
             >
-              <path
-                id="wavePath"
-                d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
-                mask="url(#mask)"
-                fill="white"
-              >
-                <animateTransform
-                  attributeName="transform"
-                  begin="0s"
-                  dur="2.5s"
-                  type="translate"
-                  from="0,0"
-                  to="40,0"
-                  repeatCount="indefinite"
-                />
-              </path>
-            </pattern>
-          </defs>
-          <img class="intromg"
-          src="/Icons/arch.svg" alt="is arch">
-        </svg>
-      </div>
-    </div>
-    <script src="extended.js"></script>
-    <script src="mouse.js"></script>
+              <animateTransform
+                attributeName="transform"
+                begin="0s"
+                dur="2.5s"
+                type="translate"
+                from="0,0"
+                to="40,0"
+                repeatCount="indefinite"
+              />
+            </path>
+          </pattern>
+          <rect x="0" y="0" width="100" height="20" fill="url(#wave)" />
+        </mask>
+      </defs>
+    
+      <image href="archio-p.png" x="0" y="0" width="100" height="20" fill-opacity="0.2" />
+      
+      <image href="archio-p.png" x="0" y="0" width="100" height="20" mask="url(#waveMask)" fill-opacity="1" />
+    </svg> -->
+    <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+      <!-- Define Mask -->
+      <defs>
+        <mask id="waveMask" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="20">
+          <!-- Apply the Pattern for the Waving Animation -->
+          <rect x="0" y="0" width="100%" height="100%" fill="black" />
+          <pattern
+            id="wave"
+            x="0"
+            y="0"
+            width="100"
+            height="20"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+              fill="white" <!-- Changed from black to white -->
+            >
+              <animateTransform
+                attributeName="transform"
+                begin="0s"
+                dur="2.5s"
+                type="translate"
+                from="0,0"
+                to="40,0"
+                repeatCount="indefinite"
+              />
+            </path>
+          </pattern>
+          <!-- Use the Pattern -->
+          <rect x="0" y="0" width="100" height="20" fill="url(#wave)" />
+        </mask>
+      </defs>
+    
+      <!-- Background Image -->
+      <image href="archio-p.png" x="0" y="0" width="100" height="20" fill-opacity="0.5" />
+      
+      <!-- Foreground Image with Mask -->
+      <image href="archio-pk.png" x="0" y="0" width="100" height="20" mask="url(#waveMask)" />
+    </svg>
+    
+    <script src="extended.js"></script>        
   </body>
 </html>
+

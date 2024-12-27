@@ -1,1 +1,12 @@
-No media playing
+Tech stack:
+
+Button => ifCollapsed => AppLet(display: flex;)
+else => AppLet(display: hidden;)
+
+AppLet includes => Pre-built modes, Live change;
+
+Props: isCollapsed, 
+
+Properties{
+    (Modes): 'Gaming Mode', 'Rest Mode', 'Sleep Mode', 'Coding Mode', 'avoe Mode'
+}

@@ -13,8 +13,3 @@ function ChangeImage() {
       document.body.style.backgroundImage = `url('${newImage}')`;
     });
 }
-
-function BlurMode() {
-  if (isBlurred === True) {
-  }
-}
