@@ -60,7 +60,7 @@
     <div class="cursor rounded"></div>
     <div class="logo">
       <img src="planet.png" alt="copyright - avoe 2024" /><span
-        >AVOE.DEV - FLOORP GREETER</span
+        >AVOE.DEV - GREETER v.1.0</span
       >
     </div>
     <div class="main-wrapper">
@@ -107,8 +107,8 @@
             /></a>
           </li>
           <li>
-            <button onclick="ChangeImage()" class="ImageChange"
-              ><img src="/Icons/ChangeImage.png" alt="ChangeImage"
+            <button onclick="ChangeImage()" id="eventButton" class="ImageChange"
+              ><img id="eventicon" src="/Icons/ChangeImage.png" alt="ChangeImage"
             /></button>
           </li>
           <li>
@@ -118,7 +118,7 @@
       </div>
       <div class="sidebar">
         <ul>
-          <li class="colored"><a href="https://w3schools.com"><img src="/Icons/w3schools-logo.png" alt="w3schools"></a></li>
+          <li ><a href="https://w3schools.com"><img id="w3schools" src="/Icons/w3schools-logo.png" alt="w3schools"></a></li>
           <li><a href=""><img src="" alt=""></a></li>
           <li><a href=""><img src="" alt=""></a></li>
           <li><a href=""><img src="" alt=""></a></li>
@@ -260,7 +260,7 @@
     
         animate();
     </script>
-    <!-- <script src="extended.js"></script> -->
+    <script src="extended.js"></script>
     <script src="mouse.js"></script>
   </body>
 </html>

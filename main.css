@@ -37,7 +37,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/292.jpg);
 }
 
 .spotlight {
@@ -178,10 +177,9 @@ body {
   left: -15px;
   width: 30px;
   height: 30px;
-  border: 2px solid green;
+  border: 2px solid #fff;
   border-radius: 50%;
   display: none;
-  animation: colorloop 5s linear infinite;
 }
 
 .homeback {
